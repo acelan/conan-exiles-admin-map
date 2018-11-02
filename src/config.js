@@ -7,7 +7,7 @@ const configFile = join(process.cwd(), 'conan-exiles-admin-map.ini')
 let config = {
   SETTINGS: {
     language: 'en',
-    port: 3001
+    port: 80
   },
   CONAN_EXILES: {
     database: join(process.cwd(), 'game.db')
