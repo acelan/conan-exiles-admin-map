@@ -4,6 +4,7 @@ export default {
   "player_list": "Player list",
   "view_all": "View all",
   "last_update": "Last update: ",
+  "download": "Download DB",
 
   "crafting": "All Crafting Placeables",
   "altars": "Altars",

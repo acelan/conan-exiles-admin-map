@@ -4,6 +4,10 @@ const routes = (app) => {
 
   apiRoutes(app)
 
+  app.get('/download', async function (req, res) {
+    res.download('game.db');
+  })
+
   app.get('/', (req, res) => {
     res.render('index', {
       lang: res.lang.phrases,
