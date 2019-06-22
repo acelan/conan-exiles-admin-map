@@ -23,6 +23,7 @@ export default {
   "wheels_of_pain": "Wheels of Pain",
 
   "players": "Players",
+  "online_players": "Players(Online)",
   "pets": "Pets",
 
   "pippi_all": "All Pippi Placeables",
