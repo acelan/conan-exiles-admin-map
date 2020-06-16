@@ -136,7 +136,7 @@ module.exports = {
     datetime(c.lastTimeOnline, 'unixepoch') as last_online from characters as c
     left outer join guilds as g on g.guildid = c.guild
     left outer join actor_position as ap on ap.id = c.id
-    left outer join account as acc on acc.user = c.playerId
+    left outer join account as acc on acc.id = c.playerId
     order by last_online desc
   `,
   onlineplayers: `
@@ -147,7 +147,7 @@ module.exports = {
     datetime(c.lastTimeOnline, 'unixepoch') as last_online from characters as c
     left outer join guilds as g on g.guildid = c.guild
     left outer join actor_position as ap on ap.id = c.id
-    left outer join account as acc on acc.user = c.playerId
+    left outer join account as acc on acc.id = c.playerId
     where acc.online = 1
     order by last_online desc
   `,
